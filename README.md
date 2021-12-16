@@ -1,5 +1,5 @@
 # Considerations
-* We should create an error middleware for handling errors gracefully
+* We should create an error middleware for handling errors gracefully.
 * Implement request authentications like Oauth2 JWT
 * The request payload validation can be improved using helpers or middlewares
 * Create migration files to setup the database and collections
