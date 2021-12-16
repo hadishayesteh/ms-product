@@ -1,4 +1,4 @@
-# Considerations
+# Consideration
 * We should create an error middleware for handling errors gracefully
 * Implement request authentications like Oauth2 JWT
 * The request payload validation can be improved using helpers or middlewares
