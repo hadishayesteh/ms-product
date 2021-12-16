@@ -11,10 +11,6 @@ app.use(productRouter)
 
 module.exports = http.createServer(app)
 
-if (process.env.NODE_ENV !== 'test') {
-  app.listen(serverPort, function () {
-    console.log('Your server is listening on port %d (http://localhost:%d)', serverPort, serverPort);
-  });
-}
-
-module.exports = app;
+app.listen(serverPort, function () {
+  console.log('Your server is listening on port %d (http://localhost:%d)', serverPort, serverPort);
+});

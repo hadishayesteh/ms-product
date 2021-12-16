@@ -44,9 +44,9 @@ describe('ProductService test scenarios', () => {
       );
     });
 
-    it('Test the successful creation of product when there is a valid parentId passed');
-    it('Test the error scenario when the parentId is invalid or no parent record can be found for the id');
-    it('Test the error scenario when the given parentId is for a child product');
+    test.todo('Test the successful creation of product when there is a valid parentId passed');
+    test.todo('Test the error scenario when the parentId is invalid or no parent record can be found for the id');
+    test.todo('Test the error scenario when the given parentId is for a child product');
 
   });
 

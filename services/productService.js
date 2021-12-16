@@ -3,7 +3,14 @@ const _ = require('lodash')
 
 async function getProducts(queryParams) {
   try {
-    return Product.find({...queryParams});
+    const result = Product.find({...queryParams});
+    if (_.isNull(result)) {
+      return {
+        type: 'notFound',
+        statusCode: 204,
+      }
+    }
+    return result
   } catch (err) {
     throw err;
   }

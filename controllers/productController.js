@@ -3,6 +3,9 @@ const { productService } = require('../services');
 async function getProducts(request, response) {
   const queryParams = request.query;
   const result  = await productService.getProducts(queryParams);
+  if(result.type && result.type === 'notFound') {
+    response.statusCode = result.statusCode;
+  }
   response.json(result);
 }
 

@@ -1,8 +1,0 @@
-{
-  "server": {
-    "port": 4000
-  },
-  "mongo": {
-    "database_host": "mongodb://localhost:27017/productDevTesting"
-  }
-}
